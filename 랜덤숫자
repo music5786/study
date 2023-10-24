@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c=0;
+    int random[100];
+    scanf("%d",&a);
+    
+    for(int i=0;i<a;i++){
+        random[i] = rand()%100+1;
+        printf("%d ",random[i]);
+    }
+    printf("\n");
+    scanf("%d",&b);
+    for(int j=0;j<a;j++){
+        if(b==random[j]){
+            c++;
+        }
+    }
+    printf("%d",c);
+    return 0;
+}
